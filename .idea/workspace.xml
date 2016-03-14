@@ -2,10 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbed8de8-6936-4717-9244-9e0786fac583" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/LICENSE" afterPath="$PROJECT_DIR$/mobilemakersio/LICENSE" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/mobilemakersio/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/mobilemakersio/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tableview.html" afterPath="$PROJECT_DIR$/mobilemakersio/tableview.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/layout/css/materialize.css" afterPath="$PROJECT_DIR$/mobilemakersio/css/materialize.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/layout/css/materialize.min.css" afterPath="$PROJECT_DIR$/mobilemakersio/css/materialize.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/layout/css/style.css" afterPath="$PROJECT_DIR$/mobilemakersio/css/style.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/layout/font/material-design-icons/LICENSE.txt" afterPath="$PROJECT_DIR$/mobilemakersio/fonts/material-design-icons/LICENSE.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/layout/font/material-design-icons/Material-Design-Icons.eot" afterPath="$PROJECT_DIR$/mobilemakersio/fonts/material-design-icons/Material-Design-Icons.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/layout/font/material-design-icons/Material-Design-Icons.svg" afterPath="$PROJECT_DIR$/mobilemakersio/fonts/material-design-icons/Material-Design-Icons.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/layout/font/material-design-icons/Material-Design-Icons.ttf" afterPath="$PROJECT_DIR$/mobilemakersio/fonts/material-design-icons/Material-Design-Icons.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/layout/font/material-design-icons/Material-Design-Icons.woff" afterPath="$PROJECT_DIR$/mobilemakersio/fonts/material-design-icons/Material-Design-Icons.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/layout/font/material-design-icons/Material-Design-Icons.woff2" afterPath="$PROJECT_DIR$/mobilemakersio/fonts/material-design-icons/Material-Design-Icons.woff2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/layout/font/roboto/Roboto-Bold.eot" afterPath="$PROJECT_DIR$/mobilemakersio/fonts/roboto/Roboto-Bold.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/layout/font/roboto/Roboto-Bold.ttf" afterPath="$PROJECT_DIR$/mobilemakersio/fonts/roboto/Roboto-Bold.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/layout/font/roboto/Roboto-Bold.woff" afterPath="$PROJECT_DIR$/mobilemakersio/fonts/roboto/Roboto-Bold.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/layout/font/roboto/Roboto-Bold.woff2" afterPath="$PROJECT_DIR$/mobilemakersio/fonts/roboto/Roboto-Bold.woff2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/layout/font/roboto/Roboto-Light.eot" afterPath="$PROJECT_DIR$/mobilemakersio/fonts/roboto/Roboto-Light.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/layout/font/roboto/Roboto-Light.ttf" afterPath="$PROJECT_DIR$/mobilemakersio/fonts/roboto/Roboto-Light.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/layout/font/roboto/Roboto-Light.woff" afterPath="$PROJECT_DIR$/mobilemakersio/fonts/roboto/Roboto-Light.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/layout/font/roboto/Roboto-Light.woff2" afterPath="$PROJECT_DIR$/mobilemakersio/fonts/roboto/Roboto-Light.woff2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/layout/font/roboto/Roboto-Medium.eot" afterPath="$PROJECT_DIR$/mobilemakersio/fonts/roboto/Roboto-Medium.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/layout/font/roboto/Roboto-Medium.ttf" afterPath="$PROJECT_DIR$/mobilemakersio/fonts/roboto/Roboto-Medium.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/layout/font/roboto/Roboto-Medium.woff" afterPath="$PROJECT_DIR$/mobilemakersio/fonts/roboto/Roboto-Medium.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/layout/font/roboto/Roboto-Medium.woff2" afterPath="$PROJECT_DIR$/mobilemakersio/fonts/roboto/Roboto-Medium.woff2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/layout/font/roboto/Roboto-Regular.eot" afterPath="$PROJECT_DIR$/mobilemakersio/fonts/roboto/Roboto-Regular.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/layout/font/roboto/Roboto-Regular.ttf" afterPath="$PROJECT_DIR$/mobilemakersio/fonts/roboto/Roboto-Regular.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/layout/font/roboto/Roboto-Regular.woff" afterPath="$PROJECT_DIR$/mobilemakersio/fonts/roboto/Roboto-Regular.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/layout/font/roboto/Roboto-Regular.woff2" afterPath="$PROJECT_DIR$/mobilemakersio/fonts/roboto/Roboto-Regular.woff2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/layout/font/roboto/Roboto-Thin.eot" afterPath="$PROJECT_DIR$/mobilemakersio/fonts/roboto/Roboto-Thin.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/layout/font/roboto/Roboto-Thin.ttf" afterPath="$PROJECT_DIR$/mobilemakersio/fonts/roboto/Roboto-Thin.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/layout/font/roboto/Roboto-Thin.woff" afterPath="$PROJECT_DIR$/mobilemakersio/fonts/roboto/Roboto-Thin.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/layout/font/roboto/Roboto-Thin.woff2" afterPath="$PROJECT_DIR$/mobilemakersio/fonts/roboto/Roboto-Thin.woff2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/layout/img/atlas.png" afterPath="$PROJECT_DIR$/mobilemakersio/img/atlas.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/layout/img/background1.jpg" afterPath="$PROJECT_DIR$/mobilemakersio/img/background1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/layout/img/background2.jpg" afterPath="$PROJECT_DIR$/mobilemakersio/img/background2.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/layout/img/background3.jpg" afterPath="$PROJECT_DIR$/mobilemakersio/img/background3.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/layout/img/sitelogo.png" afterPath="$PROJECT_DIR$/mobilemakersio/img/sitelogo.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/layout/img/sitelogo2.png" afterPath="$PROJECT_DIR$/mobilemakersio/img/sitelogo2.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/layout/img/whitesitelogo.png" afterPath="$PROJECT_DIR$/mobilemakersio/img/whitesitelogo.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/layout/js/init.js" afterPath="$PROJECT_DIR$/mobilemakersio/js/init.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/layout/js/materialize.js" afterPath="$PROJECT_DIR$/mobilemakersio/js/materialize.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/layout/js/materialize.min.js" afterPath="$PROJECT_DIR$/mobilemakersio/js/materialize.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/mobilemakersio/css/style.css" afterPath="$PROJECT_DIR$/mobilemakersio/css/mystyle.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobilemakersio/index.html" afterPath="$PROJECT_DIR$/mobilemakersio/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobilemakersio/index2.html" afterPath="$PROJECT_DIR$/mobilemakersio/index2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobilemakersio/tableview.html" afterPath="$PROJECT_DIR$/mobilemakersio/tableview.html" />
     </list>
     <ignored path="TutorialsSite.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,20 +66,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mobilemakersio/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.5">
-              <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.7794118">
+              <caret line="151" column="15" selection-start-line="151" selection-start-column="15" selection-end-line="151" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tableview.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tableview.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mobilemakersio/tableview.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5294118">
+            <state vertical-scroll-proportion="-15.0">
               <caret line="42" column="35" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
               <folding />
             </state>
@@ -57,6 +97,7 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/tableview.html" />
         <option value="$PROJECT_DIR$/mobilemakersio/tableview.html" />
+        <option value="$PROJECT_DIR$/mobilemakersio/index.html" />
       </list>
     </option>
   </component>
@@ -116,16 +157,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TutorialsSite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TutorialsSite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -140,11 +171,14 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/mobilemakersio/js" />
+      <recent name="$PROJECT_DIR$/mobilemakersio/img" />
+      <recent name="$PROJECT_DIR$/mobilemakersio/fonts" />
+      <recent name="$PROJECT_DIR$/mobilemakersio/css" />
       <recent name="$PROJECT_DIR$/mobilemakersio" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
+  <component name="RunManager" selected="JavaScript Debug.tableview.html">
     <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/TutorialsSite/mobilemakersio/index.html">
       <method />
     </configuration>
@@ -200,8 +234,8 @@
     </list>
     <recent_temporary>
       <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.tableview.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.tableview.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
   </component>
@@ -245,18 +279,18 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mobilemakersio/index.html">
+    <entry file="file://$PROJECT_DIR$/mobilemakersio/tableview.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.5">
-          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+        <state vertical-scroll-proportion="-15.0">
+          <caret line="42" column="35" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mobilemakersio/tableview.html">
+    <entry file="file://$PROJECT_DIR$/mobilemakersio/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5294118">
-          <caret line="42" column="35" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.7794118">
+          <caret line="151" column="15" selection-start-line="151" selection-start-column="15" selection-end-line="151" selection-end-column="15" />
           <folding />
         </state>
       </provider>
