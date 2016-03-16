@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbed8de8-6936-4717-9244-9e0786fac583" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobilemakersio/css/mystyle.css" afterPath="$PROJECT_DIR$/mobilemakersio/css/mystyle.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobilemakersio/index.html" afterPath="$PROJECT_DIR$/mobilemakersio/index.html" />
     </list>
     <ignored path="TutorialsSite.iws" />
@@ -25,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mobilemakersio/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.7179487">
-              <caret line="113" column="33" selection-start-line="113" selection-start-column="33" selection-end-line="113" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.53072625">
+              <caret line="52" column="28" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -55,10 +53,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mobilemakersio/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.31914893">
+            <state vertical-scroll-proportion="-3.5294118">
               <caret line="12" column="27" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="27" />
               <folding />
             </state>
@@ -105,8 +103,8 @@
         <option value="$PROJECT_DIR$/mobilemakersio/tableview.html" />
         <option value="$PROJECT_DIR$/mobilemakersio/css/mystyle.css" />
         <option value="$PROJECT_DIR$/mobilemakersio/css/materialize.css" />
-        <option value="$PROJECT_DIR$/mobilemakersio/index.html" />
         <option value="$PROJECT_DIR$/mobilemakersio/css/style.css" />
+        <option value="$PROJECT_DIR$/mobilemakersio/index.html" />
       </list>
     </option>
   </component>
@@ -481,18 +479,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mobilemakersio/index.html">
+    <entry file="file://$PROJECT_DIR$/mobilemakersio/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.7179487">
-          <caret line="113" column="33" selection-start-line="113" selection-start-column="33" selection-end-line="113" selection-end-column="33" />
+        <state vertical-scroll-proportion="-3.5294118">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mobilemakersio/css/style.css">
+    <entry file="file://$PROJECT_DIR$/mobilemakersio/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31914893">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.53072625">
+          <caret line="52" column="28" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
           <folding />
         </state>
       </provider>
