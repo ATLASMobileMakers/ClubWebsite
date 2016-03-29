@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Table Views</title>
+    <title>Intro to Android</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -35,7 +35,7 @@
         <ul class="sidebar-nav">
             <li class="sidebar-brand">
                 <!--<img src="img/whitesitelogo.png" style="width: 50%"/>-->
-                    ATLAS Mobile Makers
+                ATLAS Mobile Makers
             </li>
             <li>
                 <!--<a href="mobilemakersio/index2.html">Home</a>-->
@@ -45,7 +45,7 @@
                 <a href="#">iOS: Table Views</a>
             </li>
             <li>
-                <a href="feelings.html">Android: Buttons, TextViews & Images</a>
+                <a href="#">Android: Buttons, TextViews & Images</a>
             </li>
         </ul>
     </div>
@@ -55,90 +55,52 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>How to Create Table Views in Swift</h1>
+                    <h1>Intro to Android: Feelings</h1>
 
                     <h3>Goal</h3>
-                    <p>We are going to create an app that has a table view with a list of pet names! You will learn
-                    how to create table views and populate them with data. You'll also learn the basics of arrays in Swift.</p>
-
-                    <!--<h3>Table of Contents</h3>-->
-                    <!--<h4>Create the Project</h4>-->
-                    <!--<h4>Create the Table View Controller</h4>-->
-                    <!--<h4>Populate the Table View Cells with Data</h4>-->
-                    <!--<h4>Create App Icons and a Launch Screen</h4>-->
+                    <p>We are going to create an app that takes your name as an input, and uses a spinner (which is kind of
+                    like a dropdown menu) to print out your mood and an image associated with your mood!</p>
 
 
                     <div id="#start">
                         <h3>Create the Project</h3>
                         <ul>
-                            <li>Open Xcode</li>
-                            <li>Create a new Xcode project</li>
-                            <li>Under iOS, click Application</li>
-                            <li>Choose Single View Application</li>
-                            <li>A single view application creates a starting point (or template) for an app that has a single view. You can add more views to the single view if you want to.</li>
-                            <li>NEXT</li>
-                            <li>Fill out the data for the project</li>
-                        <br><br><br>
-                        <img src="img/tableview/intro.png" alt=""/>
-                        <br><br><br>
-                        <img src="img/tableview/setup.png" alt=""/>
-                        <br><br><br>
-                            <li>Product Name is the name of your project</li>
-                            <li>Organization Name is used if you put your app in the app store, so I just put my name or initials</li>
-                            <li>Organization Identifier is also used for the app store, so I just put my name here as well</li>
-                            <li>Bundle Identifier is something Xcode create automatically</li>
-                            <li>Language should be Swift</li>
-                            <li>Devices should be iPhone. We will be dealing with the Universal selection later</li>
-                            <li>Make sure all checkboxes are unchecked</li>
+                            <li>Open Android Studio</li>
+                            <li>Create a new project</li>
+                            <li>Application name: Feelings</li>
+                            <li>Company name: your name</li>
+                            <li>Change your project location to where you want it to be located</li>
                             <li>NEXT</li>
 
-                            <li>Choose a place where you want your project located. I usually put it on my Desktop</li>
-                            <li>Keep Source Control: Create Git repository unchecked, we don’t need version control through xcode</li>
-                            <ul>
-                                <li>Version control is used to help keep your code organized and in different versions so you can revert back to a time before</li>
-                            </ul>
+                            <br><br><br>
+                            <img src="img/feelings/project.png" alt=""/>
+                            <br><br><br>
+
+
+                            <li>Make sure Phone and Tablet is checked</li>
+                            <li>Minimum SDK: API 16: Android 4.1 (Jelly Bean)</li>
+
+                            <br><br><br>
+                            <img src="img/feelings/sdk.png" alt=""/>
+                            <br><br><br>
+
+                            <li>Click on Empty Activity. Blank Activity actually has extra stuff in it that we don't need.</li>
+                            <li>NEXT</li>
+
+                            <li>Leave MainActivity as it is. MainActivity.java is the main java file we will be working with.</li>
+                            <li>Make sure Generate Layout File is checked</li>
+                            <li>FINISH</li>
+
                         </ul>
                     </div>
                     <br><br><br>
 
 
 
-                    <div id="tableview">
-                        <h3>Create the table view controller in the Storyboard</h3>
+                    <div id="feelings">
+                        <h3>Buttons, TextViews, and Linear Layouts</h3>
                         <ul>
-                            <li>Find the Project Navigator and go into Main.storyboard. This is the main layout file</li>
-                            <br><br>
-                            <img src="img/tableview/view.png" />
-                            <br><br>
-                            <li>If you want more room to work, you can hide sections of Xcode by clicking on these square icons</li>
-                            <br><br>
-                            <img src="img/tableview/icon.png" />
-                            <br><br>
-                            <li>The initial scene is a view controller but we want a table view controller</li>
-                            <li>Click on the view controller in the storyboard and delete it</li>
-                            <li>Go over to the Object Library and drag onto the storyboard a table view controller</li>
-                            <br><br>
-                            <img src="img/tableview/object.png" />
-                            <br><br>
-                            <li>In the attributes inspector make sure “Is Initial View Controller” is checked</li>
-                            <br><br>
-                            <img src="img/tableview/initial.png" />
-                            <br><br>
-                            <li>We need to make sure the ViewController.swift file is associated with our new view controller, so go into ViewController.swift and change its super class from UIViewController to UITableViewController</li>
-                            <br><br>
-                            <img src="img/tableview/import.png" />
-                            <br><br>
-                            <!--<pre><p>import UIKit</p>-->
-                                <!--<p>class ViewController: UITableViewController {</p></pre>-->
-                            <li>Go back into Main.Storyboard, select the table view controller and change its class to ViewController</li>
-                            <br><br>
-                            <img src="img/tableview/class.png" />
-                            <br><br>
-                            <li>Select the Table View Cell and in the attributes inspector make the identifier <b>CellIdentifier</b></li>
-                            <br><br>
-                            <img src="img/tableview/cell.png" />
-                            <br><br>
-                            <li>If you run the app, you will see an empty table view!</li>
+                            <li>Open the activity_main.xml file</li>
                         </ul>
                     </div>
 
@@ -154,17 +116,17 @@
                             <img src="img/tableview/array.png" />
                             <br><br>
                             <!--<pre><p>import UIKit</p>-->
-                                <!--<p>class ViewController: UITableViewController {</p>-->
+                            <!--<p>class ViewController: UITableViewController {</p>-->
                             <!--<p>    var myArray = ["Patches", "Mocha", "Mittens", "Charlie", "Shadow", "Fifi", "Buddy", "Lucky"]</p></pre>-->
                             <li>We need to add required functions for the table view to work properly</li>
                             <li>Copy the following two functions into ViewController.swift</li>
                             <li>The first function tells the view controller how many rows are going to be in the table view. myArray.count counts the number of items in the array we created</li>
                             <li>The second function displays the cells, so you do any formatting here</li>
-                                <ul>
-                                    <li>You will see the CellIdentifier is being used to access our cell in the view controller</li>
-                                    <li>cell.textLabel?.text creates text for each of the cells</li>
-                                        <li>myArray[indexPath.row] gives each cell one pet name</li>
-                                </ul>
+                            <ul>
+                                <li>You will see the CellIdentifier is being used to access our cell in the view controller</li>
+                                <li>cell.textLabel?.text creates text for each of the cells</li>
+                                <li>myArray[indexPath.row] gives each cell one pet name</li>
+                            </ul>
                             <br><br>
                             <img src="img/tableview/code.png" />
                             <br><br>
