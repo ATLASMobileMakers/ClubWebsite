@@ -98,63 +98,107 @@
 
 
                     <div id="feelings">
-                        <h3>Buttons, TextViews, and Linear Layouts</h3>
-                        <ul>
+                        <h3>Buttons, TextViews, and EditViews</h3>
+                        <ll>
+                            <br><br><br>
+                            <img src="img/feelings/nav.png" alt=""/>
+                            <br><br><br>
+
                             <li>Open the activity_main.xml file</li>
+                            <li>The Design tab is the main design editor</li>
+                            <li>The Text tab is the XML, the code behind the design</li>
+                            <li>There should already be a textview in the app</li>
+                            <li>Move it to the center horizontally by adding android:layout_centerHorizontal = “true”</li>
+                            <li>Change the font size android:textSize = “24sp” (sp stands for scale-independent and is good for scaling to other phone sizes)</li>
+                            <li>Change the text android:text = “How are you feeling?”</li>
+                            <li>If you go into the Design tab, you will be able to see the new text centered</li>
+
+                            <br><br><br>
+                            <img src="img/feelings/first.png" alt=""/>
+                            <br><br><br>
+
+                            <li>Go to the Design tab</li>
+                            <li>Drag and drop a button and another Plain TextView under the button</li>
+                            <li>They each get default text. We can change the text in the Strings.xml file.</li>
+                            <li>Navigate to the strings.xml file and ddd the following line to change the button text to ‘Mood’</li>
+                            <li><string name=”mood_button”>Mood</string></li>
+                            <li>Then add the following line to create an empty text that will be filled with text after the button is pressed.</li>
+                            <li><string name=”feeling”></string></li>
+                            <li>Now go back to activity_main.xml</li>
+                            <li>In the Text tab, change the button text to</li>
+                            <li>android:text=”@string/mood_button"</li>
+
+                            <li>Then add the following line so that when the button is pressed, the function findMood is called</li>
+                            <li>android:onClick=”findMood”</li>
+
+                            <li>And the new textview text to</li>
+                            <li>android:text=”@string/feeling"</ll>
+                            <li>Then change the same TextView’s ID to feelingText</li>
+                            <li>android:id=”@+id/feelingText”</li>
+
+
+                            <li>Now go to MainActivity.java. We are going to create a function that fills in the text when we click the button.</li>
+
+                            <li>public void findMood(View view) {<br>
+                            TextView feeling = (TextView) findViewById(R.id.feelingText); //finds the textview by ID<br>
+                            feeling.setText("I'm in the mood to create Android apps!"); //sets the text<br>
+                            }</li>
+
+
+                            <li>Go to Activity_main.xml and add a spinner. We will store the values for the spinner in an array in Strings.xml</li>
+
+                            <li>
+                                <string-array name= “moods”>
+                                    <item>Happy</item>
+                                    <item>Sad</item>
+                                    <item>Curious</item>
+                                    <item>Angry</item>
+                                </string-array>
+                            </li>
+
+                            <li>Go back to activity_main.xml and in the spinner add the following line to access the entries</li>
+                            <li>android:entries="@array/moods"</li>
+
+
+                            <li>Run your app and make sure you can see the values of your spinner</li>
+
+                            <li>Now go to MainActivity.java and update your findMood() function to include the spinner’s selected item in the text.</li>
+
+                            <li>Spinner moodSpinner = (Spinner) findViewById(R.id.spinner);</li>
+                            <li>String moodValue = String.valueOf(moodSpinner.getSelectedItem());</li>
+                            <li>feeling.setText("I'm in a " + moodValue + " mood");</li>
+
+                            <li>Run the app</li>
+
+                            <li>EditText</li>
+                            <li>Navigate to activity_main.xml</li>
+                            <li>In the Design tab, add a horizontal linear layout under the spinner so items can be next to each other</li>
+                            <li>Inside of the linear layout, add a TextView</li>
+                            <li>Then under Text Fields, and a Person Name EditText right next to it</li>
+
+
+                            <li>In strings.xml add <string name=”name_textview”>Name</string></li>
+                            <li>In activity_main.xml update the TextView and EditText with the following</li>
+
+                            <li><TextView <br>
+                                    android:layout_width=”wrap_content”<br>
+                                    android:layout_heigh=”wrap_content”<br>
+                                    android:text=”@string/name_textview” /><br>
+                            <EditText <br>
+                                    android:layout_width=”wrap_content”<br>
+                                    android:layout_heigh=”wrap_content”<br>
+                                    android:id=”@+id/name_editText”<br>
+                                    android:layout_weight=”1” /><br>
+                            </li>
+
+
+                            <li>Now let’s update MainActivity.java so our message is personalized with our name.</li>
+                            <li>Update findMood()</li>
+
+                            <li>EditText name = (EditText) findViewById(R.id.name_editText);</li>
+                            <li>String nameValue = name.getText().toString();</li>
+                            <li>feeling.setText(nameValue + " is in a " + moodValue + " mood");</li>
                         </ul>
-                    </div>
-
-
-
-                    <br><br><br>
-                    <div id="data">
-                        <h3>Populate the Table View Cells With Data</h3>
-                        <ul>
-                            <li>Go into ViewController.swift and add an array that will hold the pet names</li>
-                            <li>Then add strings (pet names) to the array</li>
-                            <br><br>
-                            <img src="img/tableview/array.png" />
-                            <br><br>
-                            <!--<pre><p>import UIKit</p>-->
-                            <!--<p>class ViewController: UITableViewController {</p>-->
-                            <!--<p>    var myArray = ["Patches", "Mocha", "Mittens", "Charlie", "Shadow", "Fifi", "Buddy", "Lucky"]</p></pre>-->
-                            <li>We need to add required functions for the table view to work properly</li>
-                            <li>Copy the following two functions into ViewController.swift</li>
-                            <li>The first function tells the view controller how many rows are going to be in the table view. myArray.count counts the number of items in the array we created</li>
-                            <li>The second function displays the cells, so you do any formatting here</li>
-                            <ul>
-                                <li>You will see the CellIdentifier is being used to access our cell in the view controller</li>
-                                <li>cell.textLabel?.text creates text for each of the cells</li>
-                                <li>myArray[indexPath.row] gives each cell one pet name</li>
-                            </ul>
-                            <br><br>
-                            <img src="img/tableview/code.png" />
-                            <br><br>
-                            <li>If you run the app, you will be able to see the pet names!</li>
-                        </ul>
-                    </div>
-
-                    <br><br><br>
-                    <div id="extra">
-                        <h3>Create App Icons and a Launch Screen</h3>
-                        <li>Let’s change the launch screen. The launch screen is the first thing you see when you open an app, but it only lasts a few seconds</li>
-                        <li>Navigate to the LaunchScreen.storyboard and drag a label from the Object Library to the view controller</li>
-                        <li>Change the label to say Pet Names</li>
-                        <br><br>
-                        <img src="img/tableview/label.png" />
-                        <br><br>
-                        <li>You can change the background color and font color in the attributes inspector if you want to spiff up your launch screen!</li>
-                        <br><br>
-                        <img src="img/tableview/spif.png" />
-                        <br><br>
-                        <li>Navigate to Assets.xcassets and click on AppIcon</li>
-                        <br><br>
-                        <img src="img/tableview/app.png" />
-                        <br><br>
-                        <li>This shows all of the different sized app icons you will need for the iPhone</li>
-                        <li>The dimensions are in points, not pixels, so you need to double or triple the number it gives you when creating app icons. For example, 29pt needs to be 58 pixels by 58 pixels for 2x and 87 pixels by 87 pixels for 3x</li>
-                        <li>You can download the app icons I created <a href="/img/tableview/appicons/appicons.zip" target="_blank" download>HERE</a>. Make sure you drag and drop them into the correct spot</li>
-                        <li>Run the app, you’re done!</li>
                     </div>
 
 
