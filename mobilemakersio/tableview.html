@@ -160,6 +160,8 @@
                         <ul>
                             <li>Go into ViewController.swift and add an array that will hold the pet names</li>
                             <li>Then add strings (pet names) to the array</li>
+                            <li><b>var myArray = ["Patches", "Mocha", "Mittens", "Charlie", "Shadow", "Fifi", "Buddy", "Lucky"]</b></li>
+
                             <br><br>
                             <img src="img/tableview/array.png" />
                             <br><br>
@@ -168,6 +170,24 @@
                             <!--<p>    var myArray = ["Patches", "Mocha", "Mittens", "Charlie", "Shadow", "Fifi", "Buddy", "Lucky"]</p></pre>-->
                             <li>We need to add required functions for the table view to work properly</li>
                             <li>Copy the following two functions into ViewController.swift</li>
+                            <br>
+                            <li>
+                                <b>// Customize number of rows in the table view<br>
+                                override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {<br>
+                                // counts the number of items in the array<br>
+                                return myArray.count<br>
+                                }<br><br>
+
+                                // Displays the table view cells<br>
+                                override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {<br>
+                                //configure the cell<br>
+                                let cell = tableView.dequeueReusableCellWithIdentifier("CellIdentifier", forIndexPath: indexPath)<br>
+                                // Puts text into cell<br>
+                                cell.textLabel?.text = myArray[indexPath.row]<br>
+                                return cell<br>
+                                }</b><br>
+                                <br>
+                            </li>
                             <li>The first function tells the view controller how many rows are going to be in the table view. myArray.count counts the number of items in the array we created</li>
                             <li>The second function displays the cells, so you do any formatting here</li>
                                 <ul>
