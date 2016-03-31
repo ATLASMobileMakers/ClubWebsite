@@ -18,7 +18,7 @@
             </li>
 
                 <li>
-                    <a href="tableview.html">Table Views</a>
+                    <a href="tableview.php">Table Views</a>
                 </li>
 
             <li>
@@ -26,7 +26,7 @@
             </li>
 
                 <li>
-                    <a href="feelings.html">Intro</a>
+                    <a href="feelings.php">Intro</a>
                 </li>
 
         </ul>

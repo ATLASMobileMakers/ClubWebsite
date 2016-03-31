@@ -1,0 +1,289 @@
+<?php include 'includes/header.php'; ?>
+<?php include 'includes/navbar.php'; ?>
+<div id="wrapper">
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Intro to Android: Feelings</h1>
+
+                    <h3>Goal</h3>
+                    <p>We are going to create an app that takes your name as an input, and uses a spinner (which is
+                        like a dropdown menu) to print out your mood and an image associated with your mood!</p>
+
+
+                    <div id="#start">
+                        <h3>Create the Project</h3>
+                        <ul>
+                            <li>Open Android Studio</li>
+                            <li>Create a new project</li>
+                            <li>Application name: Feelings</li>
+                            <li>Company name: your name</li>
+                            <li>Change your project location to where you want it to be located</li>
+                            <li>NEXT</li>
+
+                            <br><br><br>
+                            <img src="img/feelings/project.png" alt=""/>
+                            <br><br><br>
+
+
+                            <li>Make sure Phone and Tablet is checked</li>
+                            <li>Minimum SDK: API 16: Android 4.1 (Jelly Bean)</li>
+
+                            <br><br><br>
+                            <img src="img/feelings/sdk.png" alt=""/>
+                            <br><br><br>
+
+                            <li>Click on Empty Activity. Blank Activity actually has extra stuff in it that we don't
+                                need.
+                            </li>
+                            <li>NEXT</li>
+
+                            <li>Leave MainActivity as it is. MainActivity.java is the main java file we will be working
+                                with.
+                            </li>
+                            <li>Make sure Generate Layout File is checked</li>
+                            <li>FINISH</li>
+
+                        </ul>
+                    </div>
+                    <br><br><br>
+
+
+                    <div id="feelings">
+                        <h3>Buttons, TextViews, and EditViews</h3>
+                        <ul>
+                            <li>Open the activity_main.xml file</li>
+
+                            <br><br><br>
+                            <img src="img/feelings/nav.png" alt=""/>
+                            <br><br><br>
+
+                            <li>The Design tab is the main design editor</li>
+                            <li>The Text tab is the XML, the code behind the design</li>
+                            <li>In the Text tab, move the textView to the center horizontally by adding
+                                android:layout_centerHorizontal = “true”
+                            </li>
+                            <li>Change the font size android:textSize = “24sp” (sp stands for scale-independent and is
+                                good for scaling to other phone sizes)
+                            </li>
+                            <li>Change the text android:text = “How are you feeling?”</li>
+                            <li>If you go into the Design tab, you will be able to see the new text centered</li>
+
+                            <br><br><br>
+                            <img src="img/feelings/text.png" alt=""/>
+                            <br><br><br>
+
+                            <li>Go to the Design tab</li>
+                            <li>Drag and drop a button and another Plain TextView under the button</li>
+
+                            <br><br><br>
+                            <img src="img/feelings/screen.png" alt=""/>
+                            <br><br><br>
+
+                            <li>They each get default text. We can change the text in the Strings.xml file.</li>
+                            <li>Navigate to the strings.xml file and add the following line to change the button text to
+                                ‘Mood’
+                            </li>
+                            <li>
+                                <b>&lt;string name=”mood_button”&gt;Mood&lt;/string&gt;</b>
+                            </li>
+                            <li>Then add the following line to create an empty text that will be filled with text after
+                                the button is pressed.
+                            </li>
+                            <li>
+                                <b>&lt;string name=”feeling”&gt;&lt/string&gt;</b>
+                            </li>
+                            <br>
+                            <li>Now go back to activity_main.xml</li>
+                            <li>In the Text tab, change the button text to</li>
+                            <li>
+                                <b>android:text=”@string/mood_button"</b>
+                            </li>
+
+                            <li>Then add the following line so that when the button is pressed, the function findMood is
+                                called
+                            </li>
+                            <li>
+                                <b>android:onClick=”findMood”</b>
+                            </li>
+
+                            <br><br><br>
+                            <img src="img/feelings/btn.png" alt=""/>
+                            <br><br><br>
+
+                            <li>And the new textView text to</li>
+                            <li>
+                                <b>android:text=”@string/feeling"</b>
+                            </li>
+                            <br>
+                            <li>Then change the same textView’s ID to feelingText</li>
+                            <li>
+                                <b>android:id=”@+id/feelingText”</b>
+                            </li>
+                            <br>
+
+
+                            <br><br><br>
+                            <img src="img/feelings/tv.png" alt=""/>
+                            <br><br><br>
+
+
+                            <li>Now go to MainActivity.java. We are going to create a function that fills in the text
+                                when we click the button.
+                            </li>
+                            <br>
+
+                            <li>
+                                <b>public void findMood(View view) {<br>
+                                    TextView feeling = (TextView) findViewById(R.id.feelingText); //finds the textview
+                                    by ID<br>
+                                    feeling.setText("I'm in the mood to create Android apps!"); //sets the text<br>
+                                    }</b>
+                            </li>
+                            <br>
+
+                            <br><br><br>
+                            <img src="img/feelings/code.png" alt=""/>
+                            <br><br><br>
+
+                            <li>If you get some red errors, hover over one of the red words and it is most likely
+                                because your
+                                Android Studio isn't set up to automatically add libraries. You can manually add
+                                libraries by doing the command the
+                                error message shows, or go into your preferences and under Editor -> General -> Auto
+                                Import and check
+                                optimize imports on the fly.
+                            </li>
+                            <br>
+
+                            <li>Now go to Activity_main.xml and add a spinner. We will store the values for the spinner
+                                in an array in Strings.xml
+                            </li>
+
+                            <br><br><br>
+                            <img src="img/feelings/spin.png" alt=""/>
+                            <br><br><br>
+
+
+                            <li>Go to strings.xml and add the following string array:</li>
+
+                            <li>
+                                <b>&lt;string-array name= “moods”&gt;<br>
+                                    &lt;item&gt;Happy&lt;/item&gt;<br>
+                                    &lt;item&gt;Sad&lt;/item&gt;<br>
+                                    &lt;item&gt;Curious&lt;/item&gt;<br>
+                                    &lt;item&gt;Angry&lt;/item&gt;<br>
+                                    &lt;/string-array&gt;<br>
+                                </b>
+                            </li>
+
+                            <br><br><br>
+                            <img src="img/feelings/string.png" alt=""/>
+                            <br><br><br>
+
+                            <li>Go back to activity_main.xml and in the spinner add the following line to access the
+                                entries
+                            </li>
+                            <li><b>android:entries="@array/moods"</b></li>
+
+                            <br>
+                            <li>Run your app and make sure you can see the values of your spinner</li>
+                            <br>
+
+                            <li>Now go to MainActivity.java and update your findMood() function to include the spinner’s
+                                selected item in the text.
+                            </li>
+                            <br>
+                            <li><b>Spinner moodSpinner = (Spinner) findViewById(R.id.spinner);</b></li>
+                            <li><b>String moodValue = String.valueOf(moodSpinner.getSelectedItem());</b></li>
+                            <br>
+                            <li>Change your feeling.setText to:</li>
+                            <li><b>feeling.setText("I'm in a " + moodValue + " mood");</b></li>
+                            <br>
+
+                            <br><br><br>
+                            <img src="img/feelings/findmood.png" alt=""/>
+                            <br><br><br>
+
+                            <li>Run the app</li>
+                            <br>
+
+
+                        </ul>
+                    </div>
+
+                    <div id="btns">
+                        <h3>Buttons, TextViews, and EditViews</h3>
+                        <ul>
+                            <li>EditText</li>
+                            <li>Navigate to activity_main.xml</li>
+                            <li>In the Design tab, add a horizontal linear layout above the spinner so items can be next
+                                to each other
+                            </li>
+                            <li>Inside of the linear layout, add a TextView</li>
+                            <li>Then under the section, Text Fields, and a Person Name EditText right next to the
+                                TextView you just added
+                            </li>
+
+                            <br><br><br>
+                            <img src="img/feelings/sofar.png" alt=""/>
+                            <br><br><br>
+                            <br>
+                            <li>In strings.xml add:<br>
+                                <b>&lt;string name=”name_textview”&gt;Name&lt;/string&gt;</b>
+                            </li>
+                            <br>
+                            <li>In activity_main.xml update the TextView and EditText with the following:</li>
+                            <br>
+                            <li><b>&lt;TextView <br>
+                                android:layout_width=”wrap_content”<br>
+                                android:layout_heigh=”wrap_content”<br>
+                                android:text=”@string/name_textview” /&gt;<br>
+                                &lt;EditText <br>
+                                android:layout_width=”wrap_content”<br>
+                                android:layout_heigh=”wrap_content”<br>
+                                android:id=”@+id/name_editText”<br>
+                                android:layout_weight=”1” /&gt;</b><br>
+                            </li>
+                            <br>
+
+
+                            <li>Now let’s update MainActivity.java so our message is personalized with our name.</li>
+                            <li>Update findMood()</li>
+                            <br>
+                            <li><b>EditText name = (EditText) findViewById(R.id.name_editText);</b></li>
+                            <li><b>String nameValue = name.getText().toString();</b></li>
+                            <li><b>feeling.setText(nameValue + " is in a " + moodValue + " mood");</b></li>
+
+
+                            <br>
+
+                            <li>Run the app. You should be able to input your name!</li>
+                            <br>
+                            <!--<li>-->
+                            <!--Download the following images and copy and paste them into your drawable folder: <a href="/img/feelings/images.zip" target="_blank" download>Click Here</a>-->
+                            <!--</li>-->
+                        </ul>
+                    </div>
+
+
+                    <div id="pics">
+                        <h3>ImageViews</h3>
+                        <ul>
+                            <li>Coming soon.</li>
+                        </ul>
+                    </div>
+
+                    <!--<pre><p>I am a code block</p></pre>-->
+                    <!--<a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+<?php include 'includes/footer.php'; ?>
