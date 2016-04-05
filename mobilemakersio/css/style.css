@@ -70,3 +70,11 @@ footer.page-footer {
   /*float: right;*/
   /*text-align: right;*/
 }
+
+a{
+  color: #fff;
+}
+
+a:hover {
+  color: #64B5F6;
+}
