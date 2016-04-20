@@ -1,0 +1,14 @@
+#!/bin/bash
+
+postTitle="$1"
+echo $postTitle
+if [[ -z $postTitle ]]
+then
+	echo "Since you didn't provide a post title, let's create one..."
+	echo "Enter a name for your post: "
+	read postTitle
+fi
+
+filename="$postTitle.php"
+
+cat skeletal.php > $filename
