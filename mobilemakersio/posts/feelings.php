@@ -1,65 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Intro to Android</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/mystyle.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body>
-
+<?php include '../includes/header.php'; ?>
+<?php include '../includes/navbar.php'; ?>
 <div id="wrapper">
-
-    <!-- Sidebar -->
-    <div id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <li class="sidebar-brand">
-                <!--<img src="img/whitesitelogo.png" style="width: 50%"/>-->
-                ATLAS Mobile Makers
-            </li>
-            <li>
-                <!--<a href="mobilemakersio/index2.html">Home</a>-->
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                iOS
-            </li>
-
-            <li>
-                <a href="tableview.html">Table Views</a>
-            </li>
-
-            <li>
-                Android
-            </li>
-
-            <li>
-                <a href="feelings.html">Intro</a>
-            </li>
-
-        </ul>
-    </div>
-
     <!-- Page Content -->
     <div id="page-content-wrapper">
         <div class="container-fluid">
@@ -345,21 +286,4 @@
 
 </div>
 <!-- /#wrapper -->
-
-<!-- jQuery -->
-<script src="js/jquery.js"></script>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
-
-<!-- Menu Toggle Script -->
-<script>
-    $("#menu-toggle").click(function (e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
-</script>
-
-</body>
-
-</html>
+<?php include '../includes/footer.php'; ?>
