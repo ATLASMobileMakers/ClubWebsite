@@ -24,7 +24,7 @@
                             <li>NEXT</li>
 
                             <br><br><br>
-                            <img src="img/feelings/project.png" alt=""/>
+                            <img src="../img/feelings/project.png" alt=""/>
                             <br><br><br>
 
 
@@ -32,7 +32,7 @@
                             <li>Minimum SDK: API 16: Android 4.1 (Jelly Bean)</li>
 
                             <br><br><br>
-                            <img src="img/feelings/sdk.png" alt=""/>
+                            <img src="../img/feelings/sdk.png" alt=""/>
                             <br><br><br>
 
                             <li>Click on Empty Activity. Blank Activity actually has extra stuff in it that we don't
@@ -57,7 +57,7 @@
                             <li>Open the activity_main.xml file</li>
 
                             <br><br><br>
-                            <img src="img/feelings/nav.png" alt=""/>
+                            <img src="../img/feelings/nav.png" alt=""/>
                             <br><br><br>
 
                             <li>The Design tab is the main design editor</li>
@@ -72,14 +72,14 @@
                             <li>If you go into the Design tab, you will be able to see the new text centered</li>
 
                             <br><br><br>
-                            <img src="img/feelings/text.png" alt=""/>
+                            <img src="../img/feelings/text.png" alt=""/>
                             <br><br><br>
 
                             <li>Go to the Design tab</li>
                             <li>Drag and drop a button and another Plain TextView under the button</li>
 
                             <br><br><br>
-                            <img src="img/feelings/screen.png" alt=""/>
+                            <img src="../img/feelings/screen.png" alt=""/>
                             <br><br><br>
 
                             <li>They each get default text. We can change the text in the Strings.xml file.</li>
@@ -110,7 +110,7 @@
                             </li>
 
                             <br><br><br>
-                            <img src="img/feelings/btn.png" alt=""/>
+                            <img src="../img/feelings/btn.png" alt=""/>
                             <br><br><br>
 
                             <li>And the new textView text to</li>
@@ -126,7 +126,7 @@
 
 
                             <br><br><br>
-                            <img src="img/feelings/tv.png" alt=""/>
+                            <img src="../img/feelings/tv.png" alt=""/>
                             <br><br><br>
 
 
@@ -145,7 +145,7 @@
                             <br>
 
                             <br><br><br>
-                            <img src="img/feelings/code.png" alt=""/>
+                            <img src="../img/feelings/code.png" alt=""/>
                             <br><br><br>
 
                             <li>If you get some red errors, hover over one of the red words and it is most likely
@@ -163,7 +163,7 @@
                             </li>
 
                             <br><br><br>
-                            <img src="img/feelings/spin.png" alt=""/>
+                            <img src="../img/feelings/spin.png" alt=""/>
                             <br><br><br>
 
 
@@ -180,7 +180,7 @@
                             </li>
 
                             <br><br><br>
-                            <img src="img/feelings/string.png" alt=""/>
+                            <img src="../img/feelings/string.png" alt=""/>
                             <br><br><br>
 
                             <li>Go back to activity_main.xml and in the spinner add the following line to access the
@@ -204,7 +204,7 @@
                             <br>
 
                             <br><br><br>
-                            <img src="img/feelings/findmood.png" alt=""/>
+                            <img src="../img/feelings/findmood.png" alt=""/>
                             <br><br><br>
 
                             <li>Run the app</li>
@@ -228,7 +228,7 @@
                             </li>
 
                             <br><br><br>
-                            <img src="img/feelings/sofar.png" alt=""/>
+                            <img src="../img/feelings/sofar.png" alt=""/>
                             <br><br><br>
                             <br>
                             <li>In strings.xml add:<br>
@@ -263,7 +263,7 @@
                             <li>Run the app. You should be able to input your name!</li>
                             <br>
                             <!--<li>-->
-                            <!--Download the following images and copy and paste them into your drawable folder: <a href="/img/feelings/images.zip" target="_blank" download>Click Here</a>-->
+                            <!--Download the following images and copy and paste them into your drawable folder: <a href="/../img/feelings/images.zip" target="_blank" download>Click Here</a>-->
                             <!--</li>-->
                         </ul>
                     </div>

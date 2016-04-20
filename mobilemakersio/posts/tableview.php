@@ -30,9 +30,9 @@
                             <li>NEXT</li>
                             <li>Fill out the data for the project</li>
                         <br><br><br>
-                        <img src="img/tableview/intro.png" alt=""/>
+                        <img src="../img/tableview/intro.png" alt=""/>
                         <br><br><br>
-                        <img src="img/tableview/setup.png" alt=""/>
+                        <img src="../img/tableview/setup.png" alt=""/>
                         <br><br><br>
                             <li>Product Name is the name of your project</li>
                             <li>Organization Name is used if you put your app in the app store, so I just put my name or initials</li>
@@ -59,35 +59,35 @@
                         <ul>
                             <li>Find the Project Navigator and go into Main.storyboard. This is the main layout file</li>
                             <br><br>
-                            <img src="img/tableview/view.png" />
+                            <img src="../img/tableview/view.png" />
                             <br><br>
                             <li>If you want more room to work, you can hide sections of Xcode by clicking on these square icons</li>
                             <br><br>
-                            <img src="img/tableview/icon.png" />
+                            <img src="../img/tableview/icon.png" />
                             <br><br>
                             <li>The initial scene is a view controller but we want a table view controller</li>
                             <li>Click on the view controller in the storyboard and delete it</li>
                             <li>Go over to the Object Library and drag onto the storyboard a table view controller</li>
                             <br><br>
-                            <img src="img/tableview/object.png" />
+                            <img src="../img/tableview/object.png" />
                             <br><br>
                             <li>In the attributes inspector make sure “Is Initial View Controller” is checked</li>
                             <br><br>
-                            <img src="img/tableview/initial.png" />
+                            <img src="../img/tableview/initial.png" />
                             <br><br>
                             <li>We need to make sure the ViewController.swift file is associated with our new view controller, so go into ViewController.swift and change its super class from UIViewController to UITableViewController</li>
                             <br><br>
-                            <img src="img/tableview/import.png" />
+                            <img src="../img/tableview/import.png" />
                             <br><br>
                             <!--<pre><p>import UIKit</p>-->
                                 <!--<p>class ViewController: UITableViewController {</p></pre>-->
                             <li>Go back into Main.Storyboard, select the table view controller and change its class to ViewController</li>
                             <br><br>
-                            <img src="img/tableview/class.png" />
+                            <img src="../img/tableview/class.png" />
                             <br><br>
                             <li>Select the Table View Cell and in the attributes inspector make the identifier <b>CellIdentifier</b></li>
                             <br><br>
-                            <img src="img/tableview/cell.png" />
+                            <img src="../img/tableview/cell.png" />
                             <br><br>
                             <li>If you run the app, you will see an empty table view!</li>
                         </ul>
@@ -104,7 +104,7 @@
                             <li><b>var myArray = ["Patches", "Mocha", "Mittens", "Charlie", "Shadow", "Fifi", "Buddy", "Lucky"]</b></li>
 
                             <br><br>
-                            <img src="img/tableview/array.png" />
+                            <img src="../img/tableview/array.png" />
                             <br><br>
                             <!--<pre><p>import UIKit</p>-->
                                 <!--<p>class ViewController: UITableViewController {</p>-->
@@ -137,7 +137,7 @@
                                         <li>myArray[indexPath.row] gives each cell one pet name</li>
                                 </ul>
                             <br><br>
-                            <img src="img/tableview/code.png" />
+                            <img src="../img/tableview/code.png" />
                             <br><br>
                             <li>If you run the app, you will be able to see the pet names!</li>
                         </ul>
@@ -150,19 +150,19 @@
                         <li>Navigate to the LaunchScreen.storyboard and drag a label from the Object Library to the view controller</li>
                         <li>Change the label to say Pet Names</li>
                         <br><br>
-                        <img src="img/tableview/label.png" />
+                        <img src="../img/tableview/label.png" />
                         <br><br>
                         <li>You can change the background color and font color in the attributes inspector if you want to spiff up your launch screen!</li>
                         <br><br>
-                        <img src="img/tableview/spif.png" />
+                        <img src="../img/tableview/spif.png" />
                         <br><br>
                         <li>Navigate to Assets.xcassets and click on AppIcon</li>
                         <br><br>
-                        <img src="img/tableview/app.png" />
+                        <img src="../img/tableview/app.png" />
                         <br><br>
                         <li>This shows all of the different sized app icons you will need for the iPhone</li>
                         <li>The dimensions are in points, not pixels, so you need to double or triple the number it gives you when creating app icons. For example, 29pt needs to be 58 pixels by 58 pixels for 2x and 87 pixels by 87 pixels for 3x</li>
-                        <li>You can download the app icons I created <a href="/img/tableview/appicons/appicons.zip" target="_blank" download>HERE</a>. Make sure you drag and drop them into the correct spot</li>
+                        <li>You can download the app icons I created <a href="../img/tableview/appicons/appicons.zip" target="_blank" download>HERE</a>. Make sure you drag and drop them into the correct spot</li>
                         <li>Run the app, you’re done!</li>
                     </div>
 
