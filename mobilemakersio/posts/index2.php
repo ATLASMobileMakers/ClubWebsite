@@ -1,5 +1,5 @@
-<?php include 'header.php'; ?>
-<?php include 'navbar.php'; ?>
+<?php include '../includes/header.php'; ?>
+<?php include '../includes/navbar.php'; ?>
 <div id="wrapper">
     <!-- Page Content -->
     <div id="page-content-wrapper">
@@ -21,4 +21,4 @@
 
 </div>
 <!-- /#wrapper -->
-<?php include 'footer.php'; ?>
+<?php include '../includes/footer.php'; ?>
