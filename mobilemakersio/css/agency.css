@@ -115,10 +115,28 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #222;
     border-color: transparent
 }
+.navbar-brand {
+    background-repeat: no-repeat;
+    background-position: left center;
+    width: 300px;
+    height: auto;
+    padding: 24px 0;
+    text-indent: -99999px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 4px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
 
 .navbar-default .navbar-brand {
-    color: #336699;
-    font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive
+    /*color: #336699;*/
+    /*font-family:Montserrat, "Helvetica Neue", Helvetica, Arial, cursive*/
+    background-image: url(../img/navbar_logo.png);
 }
 
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:active, .navbar-default .navbar-brand.active {
