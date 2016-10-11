@@ -827,6 +827,15 @@ img {
     -webkit-filter: contrast(180%);
 }
 
-/*.logo:hover {*/
-    /*-webkit-filter: contrast(180%);*/
-/*}*/
+.blue {
+    background-color: #0066CC;
+}
+
+header .intro-text {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+a:hover {
+    text-decoration: none;
+}
