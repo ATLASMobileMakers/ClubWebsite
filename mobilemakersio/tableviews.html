@@ -163,31 +163,16 @@
 
                             <li>The initial scene is a view controller but we want a table view controller</li>
                             <li>Click on the view controller in the storyboard and delete it</li>
-                            <li>Go over to the Object Library and drag onto the storyboard a table view controller</li>
+                            <li>Go to File -> New -> File to create a new file</li>
+                            <li>Make sure iOS is highlighted and click on Cocoa Touch Class</li>
+                            <li>NEXT</li>
+                            <li>Make the class TableViewController</li>
+                            <li>Make it a subclass of UITableViewController</li>
                             <br><br>
                             <img src="img/tableviews/shot3.png" />
                             <br><br>
-                            <li>In the attributes inspector make sure “Is Initial View Controller” is checked</li>
-                            <br><br>
-                            <img src="img/tableviews/shot4.png" />
-                            <br><br>
-                            <li>We need to make sure the ViewController.swift file is associated with our new view controller, so go into ViewController.swift and change its super class from UIViewController to UITableViewController</li>
-                            <br><br>
-                            <img src="img/tableviews/shot5.png" />
-                            <br><br>
-                            <img src="img/tableviews/shot6.png" />
-                            <br><br>
-
-                            <li>Go back into Main.Storyboard, select the table view controller and change its class to ViewController</li>
-                            <br><br>
-                            <img src="img/tableviews/shot7.png" />
-                            <br><br>
-                            <li>Select the Table View Cell and in the attributes inspector make the identifier <b>CellIdentifier</b></li>
-                            <br><br>
-                            <img src="img/tableviews/shot8.png" />
-                            <br><br>
-                            <img src="img/tableviews/shot9.png" />
-                            <br><br>
+                            <li>NEXT</li>
+                            <li>CREATE</li>
                             <li>If you run the app, you will see an empty table view!</li>
                         </ul>
                     </div>
@@ -198,45 +183,22 @@
                     <div id="data">
                         <h3>Populate the Table View Cells With Data</h3>
                         <ul>
-                            <li>Go into ViewController.swift and add an array that will hold the pet names</li>
+                            <li>Go into TableViewController.swift and add an array that will hold the pet names</li>
                             <li>Then add strings (pet names) to the array</li>
+                            <li>Copy this code:</li>
                             <li><b>var myArray = ["Patches", "Mocha", "Mittens", "Charlie", "Shadow", "Fifi", "Buddy", "Lucky"]</b></li>
 
                             <br><br>
-                            <img src="img/tableview/array.png" />
+                            <img src="img/tableviews/shot4.png" />
                             <br><br>
-                            <!--<pre><p>import UIKit</p>-->
-                            <!--<p>class ViewController: UITableViewController {</p>-->
-                            <!--<p>    var myArray = ["Patches", "Mocha", "Mittens", "Charlie", "Shadow", "Fifi", "Buddy", "Lucky"]</p></pre>-->
-                            <li>We need to add required functions for the table view to work properly</li>
-                            <li>Copy the following two functions into ViewController.swift</li>
-                            <br>
-                            <li>
-                                <b>// Customize number of rows in the table view<br>
-                                    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {<br>
-                                    // counts the number of items in the array<br>
-                                    return myArray.count<br>
-                                    }<br><br>
-
-                                    // Displays the table view cells<br>
-                                    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {<br>
-                                    //configure the cell<br>
-                                    let cell = tableView.dequeueReusableCellWithIdentifier("CellIdentifier", forIndexPath: indexPath)<br>
-                                    // Puts text into cell<br>
-                                    cell.textLabel?.text = myArray[indexPath.row]<br>
-                                    return cell<br>
-                                    }</b><br>
-                                <br>
-                            </li>
-                            <li>The first function tells the view controller how many rows are going to be in the table view. myArray.count counts the number of items in the array we created</li>
-                            <li>The second function displays the cells, so you do any formatting here</li>
-                            <ul>
-                                <li>You will see the CellIdentifier is being used to access our cell in the view controller</li>
-                                <li>cell.textLabel?.text creates text for each of the cells</li>
-                                <li>myArray[indexPath.row] gives each cell one pet name</li>
-                            </ul>
+                            <li>Change the numberOfSections function to return 1</li>
                             <br><br>
-                            <img src="img/tableview/code.png" />
+                            <img src="img/tableviews/shot5.png" />
+                            <br><br>
+                            <li>Change the tableView function to return myArray.count</li>
+                            <li>Uncomment the below function and change reuseIdentifier to CellIdentifier</li>
+                            <br><br>
+                            <img src="img/tableviews/shot6.png" />
                             <br><br>
                             <li>If you run the app, you will be able to see the pet names!</li>
                         </ul>
